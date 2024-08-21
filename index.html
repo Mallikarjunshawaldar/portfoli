@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href="login.html">Mallikarjun</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skils">Skils</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="s-nav">
+        <div class="logo">Mallikarjun</div>
+        <div class="s-menu">
+            <div class="s-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skils" onclick="toggleMenu()">Skils</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container"><img src="images/Mallikarjun.jpeg" alt="profile-pic" class="profile-pic"></div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mallikarjun</h1>
+            <p class="section__text__p2">Full Stack Developer <br> UI/UX Designer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./cv/resume.pdf')">Download cv</button>
+                <button class="btn btn-color-1" onclick="window.open('./cv/resume.pdf')">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="images/github-142-svgrepo-com.svg" alt="github image" class="icon" onclick="location.href='http://github.com/'">
+                <img src="images/instagram-svgrepo-com.svg" alt="instagram image" class="icon" onclick="location.href='http://instagram.com/'">
+                <img src="images/icons8-linked-in.svg" alt="linked in image" class="icon" onclick="location.href='http://linkedin.com/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="images/IMG_20240628_152957.jpg" alt="profile-pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="detail-container">
+                        <img src="images/education-cap-svgrepo-com.svg" alt="education pic" class="icon">
+                        <h3>Education</h3>
+                        <p>MCA 2024 <br> BCA 2019</p>
+                    </div>
+                    <div class="detail-container">
+                        <img src="images/light-bulb-energy-electricity-idea-svgrepo-com.svg" alt="skils pic" class="icon">
+                        <h3>Skils</h3>
+                        <p>JAVA<br>HTML & CSS and JAVA Script<br>UI/UX Figma, Adobe Photoshop </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis atque molestiae exercitationem soluta odit asperiores doloribus vitae eaque quam alias labore, deleniti voluptatem commodi libero eum ad deserunt quas blanditiis?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="images/down-arrow-svgrepo-com.svg" alt="down arrow icon" class="icon arrow" onclick="location.href='#skils'"/>
+        <img src="images/up-arrow-svgrepo-com.svg" alt="up arrow icon" class="icon arrows" onclick="location.href='#profile'"/>
+    </section>
+    <section id="skils">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Skils</h1>
+        <div class="skils-details-container">
+            <div class="about-container">
+                <div class="detail-container">
+                    <h2 class="skils-sub-title">Forntend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="images/circle-check-filled-svgrepo-com.svg" alt="skils icon" class="icon"/>
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/circle-check-filled-svgrepo-com.svg" alt="skils icon" class="icon"/>
+                            <div>
+                                <h3>JAVA</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/circle-check-filled-svgrepo-com.svg" alt="skils icon" class="icon"/>
+                            <div>
+                                <h3>JAVA Script</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/circle-check-filled-svgrepo-com.svg" alt="skils icon" class="icon"/>
+                            <div>
+                                <h3>ReactJS</h3>
+                                <p>basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/circle-check-filled-svgrepo-com.svg" alt="skils icon" class="icon"/>
+                            <div>
+                                <h3>UI/UX Design</h3>
+                                <p>Figma</p>
+                                <p>Webflow</p>
+                                <p>AdobePhotoshop</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <h2 class="skils-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="images/circle-check-filled-svgrepo-com.svg" alt="skils icon" class="icon"/>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/circle-check-filled-svgrepo-com.svg" alt="skils icon" class="icon"/>
+                            <div>
+                                <h3>Express.JS</h3>
+                                <p>basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/circle-check-filled-svgrepo-com.svg" alt="skils icon" class="icon"/>
+                            <div>
+                                <h3>DBMS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/circle-check-filled-svgrepo-com.svg" alt="skils icon" class="icon"/>
+                            <div>
+                                <h3>Data Structure</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/down-arrow-svgrepo-com.svg" alt="down arrow icon" class="icon arrow" onclick="location.href='#projects'"/>
+        <img src="images/up-arrow-svgrepo-com.svg" alt="up arrow icon" class="icon arrows" onclick="location.href='#about'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browes My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skils-details-container">
+            <div class="about-container">
+                <div class="detail-container color-container">
+                    <div class="article-container">
+                        <img src="images/sports.jpg" alt="1st project pic" class="project-img"/>
+                        <h2 class="project-title">MATCH MAREL</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-container color-container">
+                    <div class="article-container">
+                        <img src="images/hhs.jpg" alt="2st project pic" class="project-img"/>
+                        <h2 class="project-title">HOUSE SERVICES</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-container color-container">
+                    <div class="article-container">
+                        <img src="images/s.png" alt="1st project pic" class="project-img"/>
+                        <h2 class="project-title">MATCH MAREL</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <img src="images/down-arrow-svgrepo-com.svg" alt="down arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+        <img src="images/up-arrow-svgrepo-com.svg" alt="up arrow icon" class="icon arrows" onclick="location.href='#skils'"/>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="skils-details-container">
+            <div class="about-container">
+                <div class="detail-container">
+                        <h2 class="h2">Mallikarjun</h2>
+                        <p><strong>Address:</strong>139/b, plot no 7, Shakambari Nagar behind KMF, Dharwad, Karnataka</p>
+                        <p><strong>Phone:</strong> +91 8073452834</p>
+                        <p><strong>Email:</strong> ssmallikarjunsh@example.com</p>
+                </div>
+                <div class="detail-container">
+                    <h2>Send us a message</h2>
+                    <form class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button class="btn btn-color-2" type="submit">Send</button>
+                        <button class="btn btn-color-2" type="clear">Clear</button>
+                    </form>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skils">Skils</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h3>Mallikarjun <br>+91 807352834</h3>
+        <p>Copyright &#169; 2024 Mallikarjun. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
